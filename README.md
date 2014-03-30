@@ -14,10 +14,10 @@ This is an example project that runs on node.js + express.js on the backend and 
 
 ### Install & run
 
-`$ git clone https://github.com/andrusieczko/arun.git` 
-`$ npm install`
-`$ cd arun`
-`$ node app.js`
+```$ git clone https://github.com/andrusieczko/arun.git```
+```$ npm install```
+```$ cd arun```
+```$ node app.js```
 
 and go to `http://localhost:3000` using your browser.
 
