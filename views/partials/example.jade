@@ -1,0 +1,25 @@
+div(ng-controller="AppCtrl")
+  span Hello from {{ text }}!
+
+  .container
+    .row
+      .col-md-6.col-md-offset-3
+        h1 You can use Bootstrap styles and ui-bootstrap!
+        .btn-group
+          button(type="button", class="btn btn-primary", btn-radio="0", ng-model="radioModel") Left
+          button(type="button", class="btn btn-primary", btn-radio="1", ng-model="radioModel") Middle
+          button(type="button", class="btn btn-primary", btn-radio="2", ng-model="radioModel") Right
+
+        hr
+        h2 What has been used?
+        fields = { backend: ['node.js', 'express.js', 'less', 'jade'], frontend: ['AngularJS', 'require.js', 'ui-bootstrap', 'font-awesome'], 'dev': ['grunt', 'karma'] }
+
+        each field, fieldName in fields
+          table.table.table-condensed.table-striped
+            thead
+              tr
+                th= fieldName
+            tbody
+              each component in field
+                tr
+                  td= component

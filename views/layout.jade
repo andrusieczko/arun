@@ -1,0 +1,15 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf=8')
+    title AngularJS + require.js using Bootstrap3 on node.js seed
+
+    link(href='libs/bootstrap/bootstrap.css', rel='stylesheet')
+    link(href='libs/fontawesome/fontawesome.min.css', rel='stylesheet')
+    link(href='stylesheets/base.css', rel='stylesheet')
+
+  body
+    block content
+
+  script(src='libs/require.min.js', data-main='/js/main')
+  block scripts
