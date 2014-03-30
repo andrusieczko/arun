@@ -18,7 +18,7 @@ require.config({
   }
 });
 
-require(['angular', 'routes/mainRoutes'], function(angular) {
+require(['angular', 'routes/routes'], function(angular) {
   'use strict';
   angular.bootstrap(document, ['mainApp']);
 });

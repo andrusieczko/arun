@@ -15,8 +15,8 @@ This is an example project that runs on node.js + express.js on the backend and 
 ### Install & run
 
 `$ git clone https://github.com/andrusieczko/arun.git`  
-`$ npm install`  
 `$ cd arun`  
+`$ npm install`  
 `$ node app.js`  
 
 and go to `http://localhost:3000` using your browser.
@@ -32,16 +32,16 @@ Backend:
 
 Frontend:
 
-* AngularJS
+* AngularJS 1.2.15
 * require.js
-* Bootstrap
+* Bootstrap 3.1.1
 * ui-bootstrap
-* font-awesome
+* Font Awesome 4.0.3
 
 Dev:
 
 * grunt
-* karma with jasmine, sinonjs and protractor
+* karma with jasmine, sinonjs and protractor (soon)
 
 ## License
 
