@@ -14,13 +14,10 @@ This is an example project that runs on node.js + express.js on the backend and 
 
 ### Install & run
 
-`$ git clone https://github.com/andrusieczko/arun.git`
-
-`$ npm install`
-
-`$ cd arun`
-
-`$ node app.js`
+`$ git clone https://github.com/andrusieczko/arun.git`  
+`$ npm install`  
+`$ cd arun`  
+`$ node app.js`  
 
 and go to `http://localhost:3000` using your browser.
 
@@ -45,3 +42,7 @@ Dev:
 
 * grunt
 * karma with jasmine, sinonjs and protractor
+
+## License
+
+This code was released under [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE).
