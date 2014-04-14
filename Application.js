@@ -39,7 +39,7 @@ Application.prototype = {
 
   _routes: function() {
     var routes = require('./routes');
-    this.app.get('/partials/:partial', routes.partials);
+    this.app.get('/partials/*', routes.partials);
 
     this.app.get('/', routes.index);
   },

@@ -5,6 +5,6 @@ exports.index = function(req, res) {
 };
 
 exports.partials = function(req, res) {
-  var partial = req.params.partial;
+  var partial = req.params[0];
   res.render('partials/' + partial);
 };
