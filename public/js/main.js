@@ -12,7 +12,7 @@ require.config({
     'angular-route': {
       'deps': ['angular']
     },
-    'ui.ui-bootstrap': {
+    'ui-bootstrap': {
       'deps': ['angular']
     }
   }
