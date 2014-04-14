@@ -1,4 +1,4 @@
-arun
+arun [![Build Status](https://travis-ci.org/andrusieczko/arun.svg)](https://travis-ci.org/andrusieczko/arun)
 ====
 
 *arun*: __A__ ngularJS + __r__ equire.js + __u__ i.bootstrap + __n__ ode.js seed
