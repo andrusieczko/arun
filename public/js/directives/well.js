@@ -1,4 +1,6 @@
+// an example simple directive with a template in a separate file 
 define([], function() {
+  'use strict';
   return function() {
     return {
       restrict: 'E',

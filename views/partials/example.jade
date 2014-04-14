@@ -4,14 +4,32 @@ div(ng-controller="AppCtrl")
 
   span Hello from {{ text }}!
 
+
+  form(role="form")
+    .container
+      .row
+        .col-md-2.col-md-offset-3
+          label(for="title") Title:
+          input#title.form-control(type="text", placeholder="Enter title", ng-model="data.title")
+        .col-md-2
+          label(for="year") Year:
+          input#year.form-control(type="text", placeholder="Enter year", ng-model="data.year")
+        .col-md-2
+          label(for="technology") Technology:
+          input#technology.form-control(type="text", placeholder="Enter technology", ng-model="data.technology")
+      .row
+        .col-md-6.col-md-offset-3.text-center
+            hr
+            button.btn.btn-primary(ng-click="getData()") Fill the form
+
   .container
     .row
       .col-md-6.col-md-offset-3
         h1 You can use Bootstrap styles and ui-bootstrap!
         .btn-group
-          button(type="button", class="btn btn-primary", btn-radio="0", ng-model="radioModel") Left
-          button(type="button", class="btn btn-primary", btn-radio="1", ng-model="radioModel") Middle
-          button(type="button", class="btn btn-primary", btn-radio="2", ng-model="radioModel") Right
+          button(type="button", class="btn btn-info", btn-radio="0", ng-model="radioModel") Left
+          button(type="button", class="btn btn-info", btn-radio="1", ng-model="radioModel") Middle
+          button(type="button", class="btn btn-info", btn-radio="2", ng-model="radioModel") Right
 
         hr
         h2 What has been used?

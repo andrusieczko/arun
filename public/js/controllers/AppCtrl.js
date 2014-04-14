@@ -1,7 +1,14 @@
 define(['app'], function(app) {
   'use strict';
 
-  return app.controller('AppCtrl', function($scope) {
+  return app.controller('AppCtrl', function($scope, Data) {
     $scope.text = "AngularJS";
+    $scope.data = {};
+
+    $scope.getData = function() {
+      Data.getData().then(function(data) {
+        $scope.data = data.data;
+      });
+    };
   });
 });

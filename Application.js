@@ -25,7 +25,6 @@ Application.prototype = {
     this.app.use(express.urlencoded());
     this.app.use(express.methodOverride());
     this.app.use(express.cookieParser('Super non-secret seed!'));
-    this.app.use(this.app.router);
     this.app.use(require('less-middleware')({
       src: path.join(__dirname, 'less'),
       dest: path.join(__dirname, 'public/stylesheets'),
@@ -35,6 +34,7 @@ Application.prototype = {
     }));
     this.app.use(express.static(path.join(__dirname, 'public')));
     this.app.set('views', path.join(__dirname, 'views'));
+    this.app.use(this.app.router);
   },
 
   _routes: function() {
@@ -42,6 +42,7 @@ Application.prototype = {
     this.app.get('/partials/*', routes.partials);
 
     this.app.get('/', routes.index);
+    this.app.get('/data', routes.data);
   },
 
   start: function() {
