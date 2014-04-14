@@ -4,12 +4,12 @@ html(lang='en')
     meta(charset='utf=8')
     title AngularJS + require.js using Bootstrap3 on node.js seed
 
-    link(href='libs/bootstrap/bootstrap.css', rel='stylesheet')
-    link(href='libs/fontawesome/fontawesome.min.css', rel='stylesheet')
+    link(href='libs/bootstrap-css/css/bootstrap.min.css', rel='stylesheet')
+    link(href='libs/fontawesome/css/font-awesome.min.css', rel='stylesheet')
     link(href='stylesheets/base.css', rel='stylesheet')
 
   body
     block content
 
-  script(src='libs/require.min.js', data-main='/js/main')
+  script(src='libs/requirejs/require.js', data-main='/js/main')
   block scripts

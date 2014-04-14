@@ -1,9 +1,10 @@
 require.config({
   baseUrl: '/js',
   paths: {
-    'angular': '../libs/angular',
-    'angular-route': '../libs/angular-route.min',
-    'ui-bootstrap': '../libs/bootstrap/ui-bootstrap',
+    'angular': '../libs/angular/angular.min',
+    'angular-route': '../libs/angular-route/angular-route.min',
+    'ui-bootstrap': '../libs/angular-bootstrap/ui-bootstrap.min',
+    'ui-bootstrap-tpls': '../libs/angular-bootstrap/ui-bootstrap-tpls.min',
   },
   shim: {
     'angular': {
@@ -14,6 +15,9 @@ require.config({
     },
     'ui-bootstrap': {
       'deps': ['angular']
+    },
+    'ui-bootstrap-tpls': {
+      'deps': ['ui-bootstrap']
     }
   }
 });

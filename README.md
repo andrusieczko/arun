@@ -10,13 +10,14 @@ This is an example project that runs on node.js + express.js on the backend and 
 ### Dependencies
 
 * [node.js](http://nodejs.org/download/)
+* `$ npm install bower -g` - [bower](http://bower.io/) to download frontend dependencies
 * `$ npm install grunt-cli -g` if you want to run tests
 
 ### Install & run
 
 `$ git clone https://github.com/andrusieczko/arun.git`  
 `$ cd arun`  
-`$ npm install`  
+`$ npm install`
 `$ node app.js`  
 
 and go to `http://localhost:3000` using your browser.

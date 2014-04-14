@@ -1,7 +1,7 @@
 define(['angular',
   'directives/well',
   'services/Data',
-  'angular-route', 'ui-bootstrap'
+  'angular-route', 'ui-bootstrap', 'ui-bootstrap-tpls'
 ], function(angular, well, Data) {
   'use strict';
 
