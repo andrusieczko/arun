@@ -3,7 +3,8 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     jshint: grunt.file.readJSON('jshint.json'),
     lint: {
-      backend: ['./*js', 'routes/*.js', 'app/**/*.js'],
+      // TODO: Gruntfile should not be complicated
+      backend: ['./*js', 'routes/*.js', 'app/**/*.js', '!./Gruntfile.js'],
       frontend: ['public/js/**/*.js']
     },
     watch: {
@@ -44,13 +45,20 @@ module.exports = function(grunt) {
           "unescapeStrings": false
         }
       }
+    },
+    karma: {
+      unit: {
+        configFile: 'test/karma.conf.js'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-complexity');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-jsbeautifier');
+  grunt.loadNpmTasks('grunt-karma');
 
-  grunt.registerTask('default', ['jsbeautifier', 'jshint:*', 'complexity']);
+  grunt.registerTask('test', ['karma:unit']);
+  grunt.registerTask('default', ['jsbeautifier', 'jshint:*', 'complexity', 'test']);
 
 };
