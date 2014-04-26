@@ -8,7 +8,7 @@ var pathToModule = function(path) {
 Object.keys(window.__karma__.files).forEach(function(file) {
   if (TEST_REGEXP.test(file)) {
     // Normalize paths to RequireJS module names.
-    allTestFiles.push(pathToModule(file));
+    allTestFiles.push("../../" + pathToModule(file));
   }
 });
 
@@ -16,7 +16,33 @@ console.log("TEST FILES: " + allTestFiles);
 
 require.config({
   // Karma serves files under /base, which is the basePath from your config file
-  baseUrl: '/base',
+  baseUrl: '/base/public/js',
+
+  paths: {
+    'angular': '../libs/angular/angular',
+    'angularMocks': '../libs/angular-mocks/angular-mocks',
+    'angular-route': '../libs/angular-route/angular-route.min',
+    'ui-bootstrap': '../libs/angular-bootstrap/ui-bootstrap.min',
+    'ui-bootstrap-tpls': '../libs/angular-bootstrap/ui-bootstrap-tpls.min'
+  },
+  shim: {
+    'angularMocks': {
+      deps: ['angular'],
+      exports: 'angularMocks'
+    },
+    'angular': {
+      'exports': 'angular'
+    },
+    'angular-route': {
+      'deps': ['angular']
+    },
+    'ui-bootstrap': {
+      'deps': ['angular']
+    },
+    'ui-bootstrap-tpls': {
+      'deps': ['ui-bootstrap']
+    }
+  },
 
   // dynamically load all test files
   deps: allTestFiles,

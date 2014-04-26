@@ -4,7 +4,7 @@ require.config({
     'angular': '../libs/angular/angular.min',
     'angular-route': '../libs/angular-route/angular-route.min',
     'ui-bootstrap': '../libs/angular-bootstrap/ui-bootstrap.min',
-    'ui-bootstrap-tpls': '../libs/angular-bootstrap/ui-bootstrap-tpls.min',
+    'ui-bootstrap-tpls': '../libs/angular-bootstrap/ui-bootstrap-tpls.min'
   },
   shim: {
     'angular': {
