@@ -18,6 +18,7 @@ This is an example project that runs on node.js + express.js on the backend and 
 `$ git clone https://github.com/andrusieczko/arun.git`  
 `$ cd arun`  
 `$ npm install`  
+`$ bower install`  
 `$ node app.js`  
 
 and go to `http://localhost:3000` using your browser.

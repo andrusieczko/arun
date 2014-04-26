@@ -23,7 +23,9 @@ require.config({
     'angularMocks': '../libs/angular-mocks/angular-mocks',
     'angular-route': '../libs/angular-route/angular-route.min',
     'ui-bootstrap': '../libs/angular-bootstrap/ui-bootstrap.min',
-    'ui-bootstrap-tpls': '../libs/angular-bootstrap/ui-bootstrap-tpls.min'
+    'ui-bootstrap-tpls': '../libs/angular-bootstrap/ui-bootstrap-tpls.min',
+
+    'testUtils': '../../test/testUtils'
   },
   shim: {
     'angularMocks': {

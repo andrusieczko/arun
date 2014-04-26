@@ -1,7 +1,7 @@
-define(['app'], function(app) {
+define([], function() {
   'use strict';
 
-  return app.controller('AppCtrl', function($scope, Data) {
+  return function($scope, Data) {
 
     $scope.text = "AngularJS";
     $scope.data = {};
@@ -16,5 +16,5 @@ define(['app'], function(app) {
       });
     };
 
-  });
+  };
 });
